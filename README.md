@@ -13,6 +13,9 @@ $$
 
 - montre visuellement la stabilisation du système.
 
+<img width="2100" height="1000" alt="image" src="https://github.com/atchom/Suites_numeriques/blob/1a3b778b756d5b8982aeb6127c3ec7d2a4600173/images/suite_exple01.png" />
+
+- voir code python (suite-exple01.py)
 ## 🧠 Ce que montre ce graphique
 
 - La suite monte progressivement vers la valeur limite 3.
