@@ -74,7 +74,7 @@ Vous utilisez la formule :
 $$
 ### Graphe 
 
-<img width="3168" height="2016" alt="image" src="https://github.com/atchom/Suites_numeriques/blob/11c5e7bf0ffc1fd114c3a11073d2fa967b47b4fa/images/lissage-Exponentiel_exple02.png" />
+<img width="2100" height="1000" alt="image" src="https://github.com/atchom/Suites_numeriques/blob/11c5e7bf0ffc1fd114c3a11073d2fa967b47b4fa/images/lissage-Exponentiel_exple02.png" />
 ### Le code source python en annexe
 
 ### Tableau des ventes apres lissage
@@ -90,12 +90,12 @@ Grâce à cette analyse :
 - La tendance réelle (Sₙ) passe de 120 à 271 sur 14 jours → croissance de +126%
 - Malgré les fluctuations (jour 3 à 90), la demande augmente structurellement
 - Vous décidez de commander 300 unités par jour pour la semaine suivante
-- La prévision est basée sur
+- 
+La prévision est basée sur
+
 $$
-S_{14}=271 + 10%
+S_{14}=271 + 10% 
 $$
-de marge de sécurité
-- La prévision est basée sur $$ S_{14} =271 + 10% $$ de marge de sécurité
 ### 📝 Rapport au chef de rayon
 
 ```
