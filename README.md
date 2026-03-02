@@ -27,3 +27,15 @@ $$
 - Le système se stabilise rapidement : après 6–7 itérations, on est déjà très proche de 3.
 
 C’est exactement le comportement d’un filtre numérique, d’un algorithme de consensus, ou d’un processus d’apprentissage amorti.
+
+## 📦 Cas pratique : prévision de la demande d’un produit (dataset réel simplifié)
+### Contexte professionnel
+
+Une entreprise e‑commerce vend un produit saisonnier. Les ventes quotidiennes sont très irrégulières à cause de promotions, météo, trafic web, etc.
+Le data scientist doit produire une estimation lissée de la demande pour :
+
+   - ajuster les stocks,
+   - planifier les réapprovisionnements,
+   - éviter les ruptures,
+   - alimenter un modèle de prévision plus avancé.
+Le lissage exponentiel simple est utilisé comme première étape.
