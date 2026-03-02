@@ -7,6 +7,9 @@
 U_{n+1} = \frac{1}{3} U_n + 2
 $$
 
+## Graphe des ventes
+
+
 - affiche les valeurs,
 
 - trace la courbe de convergence vers la limite 3,
@@ -28,7 +31,45 @@ $$
 
 C’est exactement le comportement d’un filtre numérique, d’un algorithme de consensus, ou d’un processus d’apprentissage amorti.
 
-## 📦 Cas pratique : prévision de la demande d’un produit (dataset réel simplifié)
+# lissage exponentiel
+formule mathematique
+ $$
+ S_{n}=αS_{n-1}+(1−α)X_{n}
+$$
+
+## Cas pratique 2: Suivi des ventes d'un nouveau produit lancé en boutique
+### 🏪 Contexte
+
+Vous êtes responsable d'une boutique de vêtements (ou d'un magasin de sport) et vous venez de lancer un nouveau produit : un sac à dos tendance ou une nouvelle collection de baskets.
+
+Le produit est en test pendant 14 jours dans votre magasin pour évaluer sa performance avant de décider si vous le commandez en plus grande quantité.
+
+### 📈 Les données
+
+Les ventes journalières observées sont celles du code 
+
+### 🎯 Problème métier
+Les ventes sont très variables :
+
+- Jour 3 : seulement 90 ventes (peut-être un jour de semaine calme)
+
+- Jour 12 : 300 ventes (peut-être un samedi ou jour de promotion)
+
+### 👉 Si vous commandez en fonction du dernier jour seulement, vous risquez de :
+
+- Sur-stocker si vous commandez 300 après le jour 12 alors que le jour 13 retombe à 280
+
+- Sous-stocker si vous commandez 90 après le jour 3 alors que la tendance est à la hausse
+
+### 🧠 Solution appliquée : lissage exponentiel
+Vous utilisez la formule :
+
+ $$
+ S_{n}=αS_{n-1}+(1−α)X_{n}
+$$
+
+
+## 📦 Cas pratique3 : prévision de la demande d’un produit (dataset réel simplifié)
 ### Contexte professionnel
 
 Une entreprise e‑commerce vend un produit saisonnier. Les ventes quotidiennes sont très irrégulières à cause de promotions, météo, trafic web, etc.
