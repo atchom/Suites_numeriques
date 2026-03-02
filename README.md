@@ -33,6 +33,7 @@ C’est exactement le comportement d’un filtre numérique, d’un algorithme d
 
 # lissage exponentiel
 formule mathematique
+
  $$
  S_{n}=αS_{n-1}+(1−α)X_{n}
 $$
@@ -87,10 +88,14 @@ $$
 Grâce à cette analyse :
 
 - La tendance réelle (Sₙ) passe de 120 à 271 sur 14 jours → croissance de +126%
-
-- Malgré les fluctuations, la demande augmente structurellement
-
-- Vous décidez de commander plus pour la semaine suivante en utilisant S₁₄ = 271 comme prévision
+- Malgré les fluctuations (jour 3 à 90), la demande augmente structurellement
+- Vous décidez de commander 300 unités par jour pour la semaine suivante
+- La prévision est basée sur
+$$
+S_{14}=271 + 10%
+$$
+de marge de sécurité
+- La prévision est basée sur $$ S_{14} =271 + 10% $$ de marge de sécurité
 ### 📝 Rapport au chef de rayon
 
 ```
