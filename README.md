@@ -46,7 +46,11 @@ Le produit est en test pendant 14 jours dans votre magasin pour évaluer sa perf
 
 ### 📈 Les données
 
-Les ventes journalières observées sont celles du code 
+| Jours  |   1 |   2 |  3 |   4 |   5 |   6 |   7 |   8 |   9 |  10 |  11 |  12 |  13 |  14 |
+|--------|-----|-----|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Ventes | 120 | 135 | 90 | 150 | 160 | 200 | 180 | 220 | 210 | 260 | 240 | 300 | 280 | 310 |
+
+Les ventes journalières observées sont celles observées sur le tableau
 
 ### 🎯 Problème métier
 Les ventes sont très variables :
@@ -71,6 +75,36 @@ $$
 
 <img width="3168" height="2016" alt="image" src="https://github.com/atchom/Suites_numeriques/blob/11c5e7bf0ffc1fd114c3a11073d2fa967b47b4fa/images/lissage-Exponentiel_exple02.png" />
 ### Le code source python en annexe
+
+### Tableau des ventes apres lissage
+| Jours  |   1 |    2 |    3 |     4 |      5 |       6 |       7 |        8 |        9 |       10 |       11 |        12 |        13 |        14 |
+|--------|-----|------|------|-------|--------|---------|---------|----------|----------|----------|----------|-----------|-----------|-----------|
+| Ventes | 120 |  135 |   90 |   150 |    160 |     200 |     180 |      220 |      210 |      260 |      240 |       300 |       280 |       310 |
+| Lissage| 120 |124.5 |114.15|124.905|135.4335|154.80345|162.36241|179.65369 |188.75758 |210.13030 |219.09121 |243.36385  |254.35469  |271.04828  |
+
+## 💼 Décision
+
+Grâce à cette analyse :
+
+- La tendance réelle (Sₙ) passe de 120 à 271 sur 14 jours → croissance de +126%
+
+- Malgré les fluctuations, la demande augmente structurellement
+
+- Vous décidez de commander plus pour la semaine suivante en utilisant S₁₄ = 271 comme prévision
+### 📝 Rapport au chef de rayon
+
+```
+"Monsieur le chef de rayon,
+
+J'ai analysé les ventes de notre nouveau sac à dos sur les 14 premiers jours.
+Malgré des variations journalières (90 un jour, 300 le lendemain), la tendance de fond est très positive.
+
+En appliquant un lissage exponentiel (α=0,7), j'estime la demande réelle à 271 unités par jour en fin de période.
+
+Je recommande de commander 300 unités par jour pour la semaine prochaine, soit une augmentation de 50% par rapport à notre stock initial.
+
+Le produit est clairement un succès !"
+```
 
 ## 📦 Cas pratique3 : prévision de la demande d’un produit (dataset réel simplifié)
 ### Contexte professionnel
