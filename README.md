@@ -67,7 +67,10 @@ Vous utilisez la formule :
  $$
  S_{n}=αS_{n-1}+(1−α)X_{n}
 $$
+### Graphe 
 
+<img width="3168" height="2016" alt="image" src="https://github.com/atchom/Suites_numeriques/blob/11c5e7bf0ffc1fd114c3a11073d2fa967b47b4fa/images/lissage-Exponentiel_exple02.png" />
+### Le code source python en annexe
 
 ## 📦 Cas pratique3 : prévision de la demande d’un produit (dataset réel simplifié)
 ### Contexte professionnel
